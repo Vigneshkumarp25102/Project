@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Task.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="sidebar col-auto col-lg-2 col-md-1 col-xl-2 px-sm-2 px-0" id="mySidebar">
+                <div class="d-flex menus flex-column align-items-sm-center px-3 pt-2 text-light min-vh-100">
+                    <div class="col-lg-12">
+                        <a href="#"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                            <span class="col-lg-1">&nbsp;</span>
+                            <span class="fs-5 d-none d-lg-inline mx-2 col-lg-9">Logo</span>
+                            <button class="border-0 fs-5 bg-secondary text-start" onclick="openNav()">
+                                <i class="fa-solid fa-chevron-left arrow col-lg-2 mx-md-2 mx-lg-1 mx-auto"
+                                    id="navButtonIcon"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="pb-4">
+                        <img src="./3135715.png" alt="profile" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-lg-inline mx-1 text-secondary fw-bold">John Wisement</span>
+                    </div>
+                    <ul class="nav flex-column mb-sm-auto mb-0 align-items-sm-start px-0 ">
+                        <h6 class="hdnam d-none d-lg-inline my-2 text-secondary">MAIN</h6>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 d-flex text-secondary">
+                                <i class="fs-6 fa-solid fa-table-columns"></i> <span
+                                    class="mx-2 d-none d-lg-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa fa-flag"></i> <span class="ms-1 d-none d-lg-inline">Alerts &
+                                    Updates</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa fa-bar-chart"></i> <span
+                                    class="ms-1 d-none d-lg-inline">Reports</span>
+                            </a>
+                        </li>
+                        <h6 class=" hdnam d-none d-lg-inline my-2 text-secondary">PEOPLE</h6>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa fa-users"></i> <span class="ms-1 d-none d-lg-inline">Groups</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa fa-user-plus"></i> <span
+                                    class="ms-1 d-none d-lg-inline">Members</span>
+                            </a>
+                        </li>
+                        <h6 class="hdnam d-none d-lg-inline my-2 text-secondary">MARKETING</h6>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa-solid fa-feed"></i> <span class="ms-1 d-none d-lg-inline">RSS
+                                    Feeds</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-secondary">
+                                <i class="fs-6 fa-solid fa-bookmark"></i> <span class="ms-1 d-none d-lg-inline">Member
+                                    Marketing</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="justify-content-end align-items-end logout fixed-bottom">
+                        <a href="#" class="text-decoration-none text-light px-0">
+                            <i class="fs-4 fa fa-gear"></i>
+                            <span class="d-none d-lg-inline mx-1  ">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar2 col-auto col-lg-3 col-md-1 col-xl-3 px-sm-1 px-0" id="main">
+                <div class="d-flex flex-column mx-1 text-light min-vh-100">
+                    <div class="col-lg-12">
+                        <a href="#"
+                            class="d-flex align-items-center pb-3 mb-md-0 text-dark text-decoration-none">
+                            <span class="fs-5 d-none d-lg-inline col-lg-8 small">Member</span>
+                            <button class="border-0  bg-transparent"><i
+                                    class=" fs-6 fa-solid fa-user-plus text-secondary  d-none d-lg-inline "></i></button>
+                            <button class="border-0  bg-transparent"><i
+                                    class="fs-6 fa-solid fa-folder-plus text-secondary   d-none d-lg-inline "></i></button>
+                            <button class="border-0 fs-5 bg-secondary text-start" onclick="toggleNav()"><i
+                                    class="fa-solid fa-chevron-left text-light col-lg-2 mx-2 "
+                                    id="navButtonIcon1"></i></button>
+                        </a>
+                    </div>
+                    <i class="fs-3 fa-solid fa-search d-md-inline d-lg-none mx-4  text-dark"></i>
+                    <div class="d-flex col-lg-12">
+                        <div class="col-lg-9">
+                            <div class="input-group" style="height:35px;">
+                                <input class="form-control border bg-transparent border-end-0   d-none d-lg-inline pt-0 "
+                                    type="search" style="height: 30px;" placeholder="Ashley Ke" id="example-search-input">
+                                <span class="input-group-append">
+                                    <button
+                                        class="btn bg-transparent border  bg-white border-start-0  d-none d-lg-inline "
+                                        type="button" style="height: 30px;">
+                                        <i class="fa fa-search pb-0 mt-0 pt-0  d-none d-lg-inline" style="height:30px;"></i>
+                                    </button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-inline">
+                            <i class=" fs-5 fa-solid fa-chart-line text-secondary  mx-3 my-2 col-lg-1"></i>
+                            <i class="fs-5 fa-solid fa-filter text-secondary mx-1 my-2 col-lg-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 my-1">
+                        <p class="contentln text-info d-none d-lg-inline fw-bold small ">Sort by: A-Z Distance Group Name</p>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0" aria-label="Default select example" style="height:27px;">
+                            <option selected>Texas</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0 " aria-label="Default select example" style="height:27px;">
+                            <option selected>City</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0 " aria-label="Default select example" style="height:27px;">
+                            <option selected>Zip</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0 " aria-label="Default select example" style="height:27px;">
+                            <option selected>#</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0 " aria-label="Default select example" style="height:27px;">
+                            <option selected>Group</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline">
+                        <select class="form-select my-1 pt-0 " aria-label="Default select example" style="height:27px;">
+                            <option selected>#</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 d-none d-lg-inline text-center ">
+                        <button class="col-lg-4 btnapply border-0 my-2 text-light p-1"><b>Apply</b></button>
+                    </div>
+                    <div class="col-lg-12 card border-end-0 border-start-0 d-none d-lg-inline">
+                        <p class="text-secondary">Red Lobster</p>
+                    </div>
+                    <div class="d-none d-lg-inline ">
+                        <div class="col-lg-12 d-flex">
+                            <p class="text-dark small col-lg-7">Ashley Kendrick<br>
+                                <span class="small text-secondary">Activated: 03-11-2008</span>
+                            </p>
+                            <p><i class="activeindicator fa fa-circle mt-3"></i><span
+                                    class="text-dark mx-1">Active</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-12 d-flex inactivigBg">
+                            <p class="text-dark small col-lg-7">Ashley Kendrick<br>
+                                <span class="small text-secondary">Activated: 03-11-2008</span>
+                            </p>
+                            <p><i class="activeindicator fa fa-circle text-danger  mt-3"></i><span
+                                    class="text-dark  mx-1 ">Inactive</span></p>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-inline ">
+                        <p class="text-secondary ">Fresh Bennies</p>
+                        <div class="col-lg-12 d-flex inactivigBg">
+                            <p class="text-dark small col-lg-7">Ashley Kendrick<br>
+                                <span class="small text-secondary">Activated: 03-11-2008</span>
+                            </p>
+                            <p><i class="activeindicator fa fa-circle text-danger  mt-3"></i><span
+                                    class="text-dark  mx-1 ">Inactive</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar3 col-lg-7 col-md-10 col-xl-7" id="sidebar3">
+                <div class="d-flex flex-column bg-light min-vh-100">
+                    <div class="bg-light mt-2 mx-2">
+                        <div class=" d-flex col-lg-12">
+                            <p class="small  fw-medium col-lg-1">Profile</p>
+                            <p class="small  fw-medium col-lg-1 mx-4 text-secondary">Reports</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mx-2 mt-0 mb-0">
+                        <p class="small text-secondary">Please fill out the form below and read the user agreement
+                            terms and conditions.</p>
+                    </div>
+                    <hr class="mt-0">
+                    <div class="col-lg-12 d-flex justify-content-around   my-2 mt-0 ">
+                        <p class="ids my-0">Unique ID<br>
+                            <span class="small text-secondary mt-1">1234567</span>
+                        </p>
+                        <p class="ids my-0">Member ID<br>
+                            <span class="small text-secondary mt-1 ">1234567</span>
+                        </p>
+
+                        <p class="ids my-0">Group Number<br>
+                            <span class="small text-secondary mt-1 ">DB34567</span>
+                        </p>
+
+                        <p class="ids my-0">Status ID<br>
+                            <span class="small text-secondary mt-1 ">Active</span>
+                        </p>
+
+                        <p class="ids my-0">Deactivation Date<br>
+                            <span class="small text-secondary mt-1 ">12-08-2018</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-12 bginf">
+                        <p class="ids small mx-2 my-1">Member Details</p>
+                        <div class=" col-lg-12 d-flex mx-2 ">
+                            <div class="col-lg-4">
+                                <div class="col-lg-11">
+                                    <label for="firstname" class="form-label small text-secondary mt-0 mb-0">First
+                                        Name</label>
+                                    <input type="text" class="form-control mb-2" id="firstname"
+                                        placeholder="Enter First Name" style="height: 28px;"
+                                        aria-describedby="firstname">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="col-lg-11">
+                                    <label for="middleinitial" class="form-label small text-secondary mb-0">Middle
+                                        Initail</label>
+                                    <input type="text" class="form-control mb-2" id="middleinitial"
+                                        placeholder="Enter Middle Initial" style="height: 28px;"
+                                        aria-describedby="middleinitial">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="col-lg-11">
+                                    <label for="lastname" class="form-label small text-secondary mb-0">Last
+                                        Name</label>
+                                    <input type="text" class="form-control mb-2" id="lastname"
+                                        placeholder="Enter Last Name" style="height: 28px;" aria-describedby="lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-12 d-flex mx-2 ">
+                            <div class="col-lg-4">
+                                <div class="col-lg-11">
+                                    <label for="gender" class="form-label small text-secondary mt-0 mb-0">Gender</label>
+                                    <input type="text" class="form-control mb-2" id="gender"
+                                        placeholder="Select a Gender" style="height: 28px;" aria-describedby="gender">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="col-lg-11">
+                                    <label for="Birthdate"
+                                        class="form-label small text-secondary mb-0">Birthdate</label>
+                                    <div class="d-flex">
+                                        <div class="col-lg-3">
+                                            <select id="day" name="day"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="year" name="year"></select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select id="month" name="month"></select>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-11">
+                                <label for="preferlang" class="form-label small text-secondary mb-0">Preferred
+                                    Language</label>
+                                <select class="preferlangop form-select pt-0 " style="height: 28px;"
+                                    aria-label="Default select example">
+                                    <option class="small ">English</option>
+                                    <option>Tamil</option>
+                                    <option>Hindi</option>
+                                    <option>Telengu</option>
+                                    <option>Malayalam</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 bg-light ">
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-8 ">
+                                <p class="ids small mx-2 my-1">Contact Details</p>
+                                <div class="mx-2">
+                                    <div class="col-lg-12">
+                                        <label for="email" class="form-label small text-secondary mb-0">Email
+                                        </label>
+                                        <input type="text" class="placeHbg form-control mb-2" id="email"
+                                            placeholder="amanda.johnson@businessemail.com" style="height: 28px;"
+                                            aria-describedby="email">
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="col-lg-12 d-flex ">
+                                        <div class="col-lg-6">
+                                            <label for="prmnum" class="form-label small text-secondary mb-0">Primary
+                                                Phone
+                                            </label>
+                                            <input type="text" class="placeHbg form-control mb-2" id="prmnum"
+                                                placeholder="(     )        -" style="height: 28px;"
+                                                aria-describedby="prmnum">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="scdnum" class="form-label small text-secondary mb-0">Secondary
+                                                Phone
+                                            </label>
+                                            <input type="text" class="placeHbg form-control mb-2" id="scdnum"
+                                                placeholder="(     )        -" style="height: 28px;"
+                                                aria-describedby="scdnum">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="col-lg-12">
+                                        <label for="add1" class="form-label small text-secondary mb-0">Address 1
+                                        </label>
+                                        <input type="text" class="placeHbg form-control mb-2" id="add1"
+                                            placeholder="Enter Address" style="height: 28px;" aria-describedby="add1">
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="col-lg-12">
+                                        <label for="add2" class="form-label small text-secondary mb-0">Address 2
+                                        </label>
+                                        <input type="text" class="placeHbg form-control mb-2" id="add2"
+                                            placeholder="Apt.Number" style="height: 28px;" aria-describedby="add2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 d-flex mx-2">
+                                    <div class="col-lg-4">
+                                        <div class="col-lg-11">
+                                            <label for="city" class="form-label small text-secondary mt-0 mb-0">City
+                                            </label>
+                                            <input type="text" class="form-control mb-2" id="city"
+                                                placeholder="Enter City" style="height: 28px;" aria-describedby="city">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col-lg-11">
+                                            <label for="state" class="form-label small text-secondary mb-0">State
+                                            </label>
+                                            <input type="text" class="form-control mb-2" id="state"
+                                                placeholder="Enter State" style="height: 28px;"
+                                                aria-describedby="state">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="col-lg-11">
+                                            <label for="zip" class="form-label small text-secondary mb-0">Zip
+                                            </label>
+                                            <input type="text" class="form-control mb-2" id="zip"
+                                                placeholder="Enter Zip" style="height: 28px;" aria-describedby="zip">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="ids small mx-2 my-1">Dependents</p>
+                                <div class="col-lg-12 d-flex  border">
+                                    <p class="text-dark small col-lg-7 my-2">John<br>
+                                        <span class="small text-secondary">Activated: 03-11-2008</span>
+                                    </p>
+                                    <p><i class="activeindicator2 fa fa-circle mt-4"></i><span
+                                            class="text-dark mx-1 small ">Active</span>
+                                    </p>
+                                </div>
+                                <p class="deptxt text-primary text-end">Edit Dependents</p>
+                                <div class="col-lg-12 d-flex  border">
+                                    <p class="text-dark small col-lg-7 my-2">Quincy<br>
+                                        <span class="small text-secondary">Activated: 03-11-2008</span>
+                                    </p>
+                                    <p><i class="Inactiveindicator2 text-danger  fa fa-circle mt-4"></i><span
+                                            class="text-dark mx-1 small ">Inactive</span>
+                                    </p>
+                                </div>
+                                <p class="deptxt text-primary text-end">Edit Dependents</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-lg-12 d-flex">
+                            <div class="col-lg-9 col-md-8">
+                                <p class="ids small mx-2 my-1">Package Details</p>
+                                <div class="col-lg-12 d-flex">
+                                    <div class="col-lg-6 mx-2">
+                                        <p class="small text-secondary ">Group cost<br><span
+                                                class="text-secondary ">$12.45</span></p>
+                                        <label for="afct" class="form-label small text-secondary mb-0">Affilicate
+                                            Code
+                                        </label>
+                                        <input type="text" class="form-control mb-2 " id="afct"
+                                            placeholder="Enter Affilicate Code" style="height: 28px;"
+                                            aria-describedby="afct">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="small text-secondary ">Member Fee<br><span
+                                                class="text-secondary ">$13.60</span></p>
+                                        <p class="small text-secondary ">Payment Method<br><span
+                                                class="text-secondary ">List Bill - Monthly</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-6 mx-2">
+                                        <p class="small text-secondary mb-0 my-1 mb-2">Select Benifit
+                                            Packages<br><span class="text-secondary small">Member benefit
+                                                Package</span>
+                                        </p>
+                                        <p class="deptxt text-primary small mt-0">Change Member Package</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="ids small mx-2 my-1">Benifit Card Details</p>
+                                    <div class="d-flex ">
+                                        <div class="col-lg-6 mx-2">
+                                            <p class="small text-secondary ">Card Print Date<br><span
+                                                    class="text-secondary ">7/26/2012</span></p>
+                                        </div>
+                                        <div class="col-lg-6 mx-2">
+                                            <p class="small text-secondary ">Card Ship<br><span
+                                                    class="text-secondary ">8/31/2016</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <div class="col-lg-6 mx-2">
+                                            <p class="small text-secondary ">Deactivation Date<br><span
+                                                    class="text-secondary ">8/31/2018</span></p>
+                                        </div>
+                                        <div class="col-lg-6 mx-2">
+                                            <p class="small text-secondary ">Effective Date<br><span
+                                                    class="text-secondary ">8/31/2016</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <div class="col-lg-6 mx-2">
+                                            <p class="small text-secondary ">Expiration Date<br><span
+                                                    class="text-secondary ">7/26/2017</span></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4">
+                                <p class="ids small mx-2 my-1">Benifits</p>
+                                <div class="col-lg-12 border">
+                                    <p class=" bicn"> <img src="./BB.png" alt="profile" width="25" height="25"
+                                            class="rounded-circle"></i> Hearing Aids</p>
+                                    <p class=" bicn"> <img src="./BB.png" alt="profile" width="25" height="25"
+                                            class="rounded-circle"></i> Health Advacate<sup>TM</sup>Solution from
+                                        Health Advacate<sup>TM</sup></p>
+                                    <p class=" bicn"> <img src="./BB.png" alt="profile" width="25" height="25"
+                                            class="rounded-circle"></i> Pharmacy</p>
+                                </div>
+                                <div class="card card_bg my-5 mb-0">
+                                    <img src="./b.png" alt="profile" width="50" height="50" class="mt-2 mx-2">
+                                    <p class="small mb-0 text-primary ">BenfitsPal<sup>TM</sup></p>
+                                </div>
+                                <p class="infodown">JHON Q CUSTOMER<br>
+                                    Member #SAMPLE0001<br>
+                                    GROUP #EAT<br>
+                                    This is not Insurance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./Task.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

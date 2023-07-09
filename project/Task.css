@@ -1,0 +1,113 @@
+.sidebar {
+  background-color: rgb(30, 30, 47);
+}
+.sidebar2{
+  background-color: white;
+}
+.menus {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1105px) and (min-width: 992px) {
+.contentln{
+    font-size: small;
+}
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 990px) {
+  .menus {
+    font-size: 11px;
+  }
+}
+
+.form-select{
+  background-color: rgb(239, 237, 237);
+}
+.btnapply{
+  background-color: rgb(22, 236, 22);
+}
+.inactivigBg{
+  background-color: rgb(239, 237, 237);
+}
+.activeindicator{
+  font-size: 11px;
+  color: rgb(22, 236, 22);;
+}
+.activeindicator2{
+  font-size: 9px;
+  color: rgb(22, 236, 22);;
+}
+.logout{
+  vertical-align: bottom;
+}
+.sidebar3{
+  background-color: rgb(239, 237, 237);
+}
+.ids{
+  font-weight: 500;
+  font-size: small;
+}
+.bginf{
+  background-color: rgb(239, 237, 237);
+}
+.input {
+  display: block;
+  width: 50vw;
+  padding: 0 1.25rem;
+  border-radius:none !important; 
+}
+
+input,
+input::placeholder {
+  font: 0.7rem/4 sans-serif;
+}
+.preferlangop{
+  background-color: white;
+}
+.placeHbg{
+  background-color: rgb(239, 237, 237);
+}
+.deptxt{
+  font-weight:500;
+  font-size: 12px;
+}
+.Inactiveindicator2{
+  font-size: 9px;
+}
+.card_bg{
+  background: rgb(255,255,255);
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(33, 37, 224));
+  border: none;
+}
+.bicn{
+  font-weight: 600;
+  font-size: 12px;
+}
+.infodown{
+  font-size: 9px;
+  font-weight: 700;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.hdnam{
+  font-size: 15px;
+}
+.icgrbg{
+  background-color: rgb(108, 101, 101);
+
+}
+
+
+.logout {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    
+}
